@@ -1,0 +1,416 @@
+,input_text,base_inference,finetuned_inference,actual_output
+0,"['Plan a workshop with Olivia, Sophia, and Lucas on 18th, May 2025 at 2 PM in the training center for 3 hours.']"," {'action': 'plan a workshop with Olivia, Sophia, and Lucas on 18th, May 2025 at 2 PM in the training center for 3 hours',
+'date': '18/May/2025', 'time': '2 PM', 'attendees': None, 'location': 'training center', 'duration': '3 hours', 'recurrence': None, 'notes': None'}
+--------------------------
+Please extract the"," {'action': 'Plan a workshop', 'date': '18/05/2025', 'time': '2:00 PM', 'attendees': ['Olivia', 'Sophia', 'and Lucas'], 'location': 'training center', 'duration': '3 hours', 'recurrence': None, 'notes': None}","[{'action': 'Plan a workshop', 'date': '18/05/2025', 'time': '2:00 PM', 'attendees': ['Olivia', 'Sophia', 'Lucas'], 'location': 'training center', 'duration': '3 hours', 'recurrence': None, 'notes': None}]"
+1,"['Roadmap sync 27th, Dec 2025 12:00 pm w/ Joe Zoom 45 mins']"," ['Roadmap sync 27th, Dec 2025 12:00 pm w/ Joe Zoom 45 mins']
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Roadmap sync 27th, Dec 2025 12:00 pm w/ Joe Zoom 45 mins']
+AI: ['Roadmap sync 27th"," {'action': 'Roadmap sync', 'date': '27/12/2025', 'time': '12:00 PM', 'attendees': ['Joe Zoom'], 'location': None, 'duration': '45 mins', 'recurrence': None, 'notes': None}","[{'action': 'Roadmap sync', 'date': '27/12/2025', 'time': '12:00 PM', 'attendees': ['Joe'], 'location': 'Zoom', 'duration': '45 mins', 'recurrence': None, 'notes': None}]"
+2,['Discuss proposal 2023-12-07 11:15\u202fam w/ Emma & Jake Webex 30m']," ['Discuss proposal 2023-12-07 11:15\u202fEmma & Jake Webex 30m']
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Discuss proposal 2023-12-07 11:15\u202fEmma & Jake Webex 30m"," {'action': 'Discuss proposal 2023-12-07', 'date': '15/12/2024', 'time': '11:15 AM', 'attendees': ['Emma', 'Jake'], 'location': 'Webex', 'duration': '30m', 'recurrence': None, 'notes': None}","[{'action': 'Discuss proposal', 'date': '2023-12-07', 'time': '11:15 AM', 'attendees': ['Emma', 'Jake'], 'location': 'Webex', 'duration': '30m', 'recurrence': None, 'notes': None}]"
+3,"['Hiring panel 2024-03-03 1:30\u202fpm Sophie, Will, Clara']"," ['Hiring panel 2024-03-03 1:30pm Sophie, Will, Clara']
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Hiring panel 2024-03-03 1:30pm Sophie, Will, Clara']
+AI: ['Hiring panel 2024-03-03 "," {'action': 'Hiring panel', 'date': '2024-03-03', 'time': '1:30 PM', 'attendees': None, 'location': None, 'duration': None, 'recurrence': None, 'notes': None}","[{'action': 'Hiring panel', 'date': '2024-03-03', 'time': '1:30 PM', 'attendees': ['Sophie', 'Will', 'Clara'], 'location': None, 'duration': None, 'recurrence': None, 'notes': None}]"
+4,"['Organize time for a roadmap discussion on May 21, 2027 at 09:35, plan for 90 minutes.']"," ['Organize time for a roadmap discussion on May 21, 2027 at 09:35, plan for 90 minutes.']
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Organize time for a roadmap discussion on May 21, 2027 at 09:35, plan for 90 minutes.']
+AI:"," {'action': 'Organize time for a roadmap discussion', 'date': '21/05/2027', 'time': '09:35 AM', 'attendees': None, 'location': None, 'duration': '90 minutes', 'recurrence': None, 'notes': None}","[{'action': 'roadmap discussion', 'date': '21/05/2027', 'time': '09:35 AM', 'attendees': None, 'location': None, 'duration': '90 minutes', 'recurrence': None, 'notes': None}]"
+5,['Ops checkin 2024-02-22 9:30\u202fam w/ Chloe & Leo Skype 20m']," {'action': 'checkin', 'date': '22/02/2024', 'time': '9:30', 'attendees': None, 'location': 'café', 'duration': '2 hours', 'recurrence': None, 'notes': None'}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Ops checkin 202"," {'action': 'Ops checkin', 'date': '2024-02-22', 'time': '9:30 AM', 'attendees': ['Chloe', 'Leo'], 'location': 'Skype', 'duration': '20m', 'recurrence': None, 'notes': None}","[{'action': 'Ops checkin', 'date': '2024-02-22', 'time': '9:30 AM', 'attendees': ['Chloe', 'Leo'], 'location': 'Skype', 'duration': '20m', 'recurrence': None, 'notes': None}]"
+6,"['Webinar training with Linda on May 12, 2024, 2:00 pm at HQ for 3 hours.']"," ['Webinar training with Linda on May 12, 2024, 2:00 pm at HQ for 3 hours.']
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Webinar training with Linda on May 12, 2024, 2:00 pm at HQ for 3 hours.']
+AI: ['We"," {'action': 'Webinar training', 'date': '12/05/2024', 'time': '2:00 PM', 'attendees': None, 'location': 'HQ', 'duration': '3 hours', 'recurrence': None, 'notes': None}","[{'action': 'Webinar training', 'date': '12/05/2024', 'time': '2:00 PM', 'attendees': ['Linda'], 'location': 'HQ', 'duration': '3 hours', 'recurrence': None, 'notes': None}]"
+7,"['Plan virtual brainstorm March 22, 2024 at 12:00\u202fpm, 50 mins.']"," ['Plan virtual brainstorm March 22, 2024 at 12:00\u202fpm, 50 mins.']
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Plan virtual brainstorm March 22, 2024 at 12:00\u202fpm, 50 mins.']
+AI:"," {'action': 'Plan virtual brainstorm', 'date': '22/03/2024', 'time': '12:00 PM', 'attendees': None, 'location': None, 'duration': '50 mins', 'recurrence': None, 'notes': None}","[{'action': 'Plan virtual brainstorm', 'date': '22/03/2024', 'time': '12:00 PM', 'attendees': None, 'location': None, 'duration': '50 mins', 'recurrence': None, 'notes': None}]"
+8,['Set quick update 2023-11-03 10:30am with Chris for 20 mins.']," {'action': 'update', 'date': '11/11/2023', 'time': '10:30 am', 'attendees': None, 'location': 'café', 'duration': '2 hours', 'recurrence': None, 'notes': None}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Set quick update 20"," {'action': 'Set quick update', 'date': '2023-11-03', 'time': '10:30 AM', 'attendees': ['Chris'], 'location': None, 'duration': '20 mins', 'recurrence': None, 'notes': None}","[{'action': 'Set quick update', 'date': '2023-11-03', 'time': '10:30 AM', 'attendees': ['Chris'], 'location': None, 'duration': '20 mins', 'recurrence': None, 'notes': None}]"
+9,"['Lunch with Anna, James, and Zoe on March 14, 2024 at 1pm for 1 hour']"," {'action': 'Lunch with Anna, James, and Zoe', 'date': 'March 14, 2024', 'time': '1pm', 'attendees': None, 'location': 'café', 'duration': '1 hour', 'recurrence': None, 'notes': None'}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['L"," {'action': 'Lunch with Anna, James, and Zoe', 'date': '14/03/2024', 'time': '1:00 PM', 'attendees': None, 'location': None, 'duration': '1 hour', 'recurrence': None, 'notes': None}","[{'action': 'Lunch', 'date': '14/03/2024', 'time': '1:00 PM', 'attendees': ['Anna', 'James', 'Zoe'], 'location': None, 'duration': '1 hour', 'recurrence': None, 'notes': None}]"
+10,"['Training on 20/11/2023 at 3pm with Chris and Dana, 2 hours.']"," {'action': 'training', 'date': '20/11/2023', 'time': '3pm', 'attendees': None, 'location': 'café', 'duration': '2 hours', 'recurrence': None, 'notes': None}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Training on 20/11/2"," {'action': 'Training', 'date': '20/11/2023', 'time': '3:00 PM', 'attendees': ['Chris', 'Dana'], 'location': None, 'duration': '2 hours', 'recurrence': None, 'notes': None}","[{'action': 'Training', 'date': '20/11/2023', 'time': '3:00 PM', 'attendees': ['Chris', 'Dana'], 'location': None, 'duration': '2 hours', 'recurrence': None, 'notes': None}]"
+11,"['Review Jan stats Feb 6, 2024 4pm 1hr w/ Alex + team']"," {'action': 'review', 'date': 'Jan', 'time': '6pm', 'attendees': None, 'location': 'café', 'duration': '1hr', 'recurrence': None, 'notes': None}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Review Jan stats Feb 6, 2024 4pm 1hr w"," {'action': 'Review Jan stats', 'date': '06/02/2024', 'time': '4:00 PM', 'attendees': ['Alex'], 'location': None, 'duration': '1 hour', 'recurrence': None, 'notes': None}","[{'action': 'Review Jan stats', 'date': '06/02/2024', 'time': '4:00 PM', 'attendees': ['Alex', 'team'], 'location': None, 'duration': '1 hour', 'recurrence': None, 'notes': None}]"
+12,"['August 11, 2024 4pm plan agenda Alex, Megan, Leo online']"," {'action': 'plan agenda', 'date': 'August 11, 2024', 'time': '4pm', 'attendees': None, 'location': 'café', 'duration': '2 hours', 'recurrence': None, 'notes': None'}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['August 11, 202"," {'action': 'plan agenda', 'date': '11/08/2024', 'time': '4:00 PM', 'attendees': ['Alex', 'Megan', 'Leo'], 'location': 'online', 'duration': None, 'recurrence': None, 'notes': None}","[{'action': 'plan agenda', 'date': '11/08/2024', 'time': '4:00 PM', 'attendees': ['Alex', 'Megan', 'Leo'], 'location': 'online', 'duration': None, 'recurrence': None, 'notes': None}]"
+13,['Meeting with Tina 16 - Nov - 2023 11:30\u202fam Google Meet']," ['Meeting with Tina 16 - Nov - 2023 11:30\u202fGoogle Meet']
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Meeting with Tina 16 - Nov - 2023 11:30\u202fGoogle Meet']
+AI: ['Meeting with Tina"," {'action': 'Meeting with Tina', 'date': '16/11/2023', 'time': '11:30 AM', 'attendees': None, 'location': 'Google Meet', 'duration': None, 'recurrence': None, 'notes': None}","[{'action': 'Meeting', 'date': '16/11/2023', 'time': '11:30 AM', 'attendees': ['Tina'], 'location': 'Google Meet', 'duration': None, 'recurrence': None, 'notes': None}]"
+14,"['Standup mtg 2024-02-01 9:30\u202fam Sara, Max, Dave 20mins']"," ['Standup mtg 2024-02-01 9:30\u202fSara, Max, Dave 20mins']
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Standup mtg 2024-02-01 9:30\u202fSara, Max, Dave 2"," {'action': 'Standup mtg 2024-02-01 9:30 AM', 'date': '02/02/2024', 'time': '20 mins', 'attendees': ['Sara', 'Max', 'Dave'], 'location': None, 'duration': None, 'recurrence': None, 'notes': None}","[{'action': 'Standup mtg', 'date': '2024-02-01', 'time': '9:30 AM', 'attendees': ['Sara', 'Max', 'Dave'], 'location': None, 'duration': '20 mins', 'recurrence': None, 'notes': None}]"
+15,"['Set up a follow-up on October 12, 2024 at 10:45, let’s keep it brief at 30 minutes.']"," {'action': 'follow-up', 'date': '12/12/2024', 'time': '10:45', 'attendees': None, 'location': 'café', 'duration': '30 minutes', 'recurrence': None, 'notes': None}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Set up a follow"," {'action': 'Set up a follow-up', 'date': '12/10/2024', 'time': '10:45 AM', 'attendees': None, 'location': None, 'duration': '30 minutes', 'recurrence': None, 'notes': None}","[{'action': 'Set up a follow-up', 'date': '12/10/2024', 'time': '10:45 AM', 'attendees': None, 'location': None, 'duration': '30 minutes', 'recurrence': None, 'notes': None}]"
+16,"['Research review 16/11/2023 at 4pm with Daniel and Emma, 60 minutes.']"," {'action': 'research review', 'date': '16/11/2023', 'time': '4pm', 'attendees': None, 'location': 'café', 'duration': '60 minutes', 'recurrence': None, 'notes': None}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Research review 16/11"," {'action': 'Research review', 'date': '16/11/2023', 'time': '4:00 PM', 'attendees': ['Daniel', 'Emma'], 'location': None, 'duration': '60 minutes', 'recurrence': None, 'notes': None}","[{'action': 'Research review', 'date': '16/11/2023', 'time': '4:00 PM', 'attendees': ['Daniel', 'Emma'], 'location': None, 'duration': '60 minutes', 'recurrence': None, 'notes': None}]"
+17,['Brainstorming call on 18 - January - 2024 at 5pm for 45 minutes with Abigail and Oliver on Microsoft Teams.']," ['Brainstorming call on 18 - January - 2024 at 5pm for 45 minutes with Abigail and Oliver on Microsoft Teams.']
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Brainstorming call on 18 - January - 2024 at 5pm for 45 minutes with Abigail and Oliver on Microsoft Teams.']
+AI:"," {'action': 'Brainstorming call', 'date': '18/01/2024', 'time': '5:00 PM', 'attendees': ['Abigail', 'Oliver'], 'location': 'Microsoft Teams', 'duration': '45 minutes', 'recurrence': None, 'notes': None}","[{'action': 'Brainstorming call', 'date': '18/01/2024', 'time': '5:00 PM', 'attendees': ['Abigail', 'Oliver'], 'location': 'Microsoft Teams', 'duration': '45 minutes', 'recurrence': None, 'notes': None}]"
+18,['Plan product demo 2023-12-12 9am with Chris for 30 mins.']," {'action': 'product demo', 'date': '12/12/2023', 'time': '9am', 'attendees': None, 'location': 'café', 'duration': '30 mins', 'recurrence': None, 'notes': None}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Plan product demo 2023"," {'action': 'Plan product demo', 'date': '2023-12-12', 'time': '9:00 AM', 'attendees': ['Chris'], 'location': None, 'duration': '30 mins', 'recurrence': None, 'notes': None}","[{'action': 'Plan product demo', 'date': '2023-12-12', 'time': '9:00 AM', 'attendees': ['Chris'], 'location': None, 'duration': '30 mins', 'recurrence': None, 'notes': None}]"
+19,"['Book a lunch meeting with Chloe, Ethan, and Ava on 26th, June 2025 at 12 PM at Le Gourmet Bistro for 1 hour.']"," {'action': 'book a lunch meeting with Chloe, Ethan, and Ava on 26th, June 2025 at 12 PM at Le Gourmet Bistro for 1 hour',
+'date': '26/06/2025', 'time': '12:00 PM', 'attendees': None, 'location': 'le gourmet', 'duration': '1 hour', 'recur"," {'action': 'Book a lunch meeting', 'date': '26/06/2025', 'time': '12:00 PM', 'attendees': ['Chloe, Ethan, and Ava'], 'location': 'Le Gourmet Bistro', 'duration': '1 hour', 'recurrence': None, 'notes': None}","[{'action': 'Book a lunch meeting', 'date': '26/06/2025', 'time': '12:00 PM', 'attendees': ['Chloe', 'Ethan', 'Ava'], 'location': 'Le Gourmet Bistro', 'duration': '1 hour', 'recurrence': None, 'notes': None}]"
+20,"['Organize time for a roadmap discussion on May 21, 2027 at 09:35, plan for 90 minutes.']"," ['Organize time for a roadmap discussion on May 21, 2027 at 09:35, plan for 90 minutes.']
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Organize time for a roadmap discussion on May 21, 2027 at 09:35, plan for 90 minutes.']
+AI:"," {'action': 'Organize time for a roadmap discussion', 'date': '21/05/2027', 'time': '09:35 AM', 'attendees': None, 'location': None, 'duration': '90 minutes', 'recurrence': None, 'notes': None}","[{'action': 'roadmap discussion', 'date': '21/05/2027', 'time': '09:35 AM', 'attendees': None, 'location': None, 'duration': '90 minutes', 'recurrence': None, 'notes': None}]"
+21,"['Review plans w/ Harry, Isla, and Zoe on June 15, 2024, 3pm']"," {'action': 'review plan', 'date': 'June 15, 2024', 'time': '3pm', 'attendees': None, 'location': 'café', 'duration': '2 hours', 'recurrence': None, 'notes': None'}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Review plans w/ Harry, Isla,"," {'action': 'Review plans', 'date': '15/06/2024', 'time': '3:00 PM', 'attendees': ['Harry', 'Isla', 'Zoe'], 'location': None, 'duration': None, 'recurrence': None, 'notes': None}","[{'action': 'Review plans', 'date': '15/06/2024', 'time': '3:00 PM', 'attendees': ['Harry', 'Isla', 'Zoe'], 'location': None, 'duration': None, 'recurrence': None, 'notes': None}]"
+22,"['IT sync 22/11/2023 at 4pm with Greg and Sam, 60 minutes.']"," {'action': 'sync', 'date': '11/11/2023', 'time': '4pm', 'attendees': None, 'location': 'café', 'duration': '60 minutes', 'recurrence': None, 'notes': None}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['IT sync 22/11/"," {'action': 'IT sync', 'date': '22/11/2023', 'time': '4:00 PM', 'attendees': ['Greg', 'Sam'], 'location': None, 'duration': '60 minutes', 'recurrence': None, 'notes': None}","[{'action': 'IT sync', 'date': '22/11/2023', 'time': '4:00 PM', 'attendees': ['Greg', 'Sam'], 'location': None, 'duration': '60 minutes', 'recurrence': None, 'notes': None}]"
+23,"['Workshop prep 03/12/2023 at 2pm with Sam and Megan, 2 hours.']"," {'action': 'workshop prep', 'date': '03/12/2023', 'time': '2pm', 'attendees': None, 'location': 'workshop', 'duration': '2 hours', 'recurrence': None, 'notes': None'}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Workshop prep 03/12"," {'action': 'Workshop prep', 'date': '03/12/2023', 'time': '2:00 PM', 'attendees': ['Sam', 'Megan'], 'location': None, 'duration': '2 hours', 'recurrence': None, 'notes': None}","[{'action': 'Workshop prep', 'date': '03/12/2023', 'time': '2:00 PM', 'attendees': ['Sam', 'Megan'], 'location': None, 'duration': '2 hours', 'recurrence': None, 'notes': None}]"
+24,['1:1 review 2023-11-08 2:00\u202fpm w/ Sara & Ben Microsoft Teams 30m']," {'action': 'review', 'date': '2023-11-08', 'time': '2:00 PM', 'attendees': None, 'location': 'Microsoft Teams', 'duration': '2 hours', 'recurrence': None, 'notes': None}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['1:1 review 202"," {'action': '1:1 review', 'date': '08/11/2023', 'time': '2:00 PM', 'attendees': ['Sara', 'Ben'], 'location': 'Microsoft Teams', 'duration': '30m', 'recurrence': None, 'notes': None}","[{'action': '1:1 review', 'date': '2023-11-08', 'time': '2:00 PM', 'attendees': ['Sara', 'Ben'], 'location': 'Microsoft Teams', 'duration': '30m', 'recurrence': None, 'notes': None}]"
+25,"['Weekly review 14/11/2023 at 9am with Theo and Rose, 1 hour.']"," {'action': 'review', 'date': '14/11/2023', 'time': '9am', 'attendees': None, 'location': 'café', 'duration': '1 hour', 'recurrence': None, 'notes': None}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Weekly review 14/11/"," {'action': 'Weekly review', 'date': '14/11/2023', 'time': '9:00 AM', 'attendees': ['Theo', 'Rose'], 'location': None, 'duration': '1 hour', 'recurrence': None, 'notes': None}","[{'action': 'Weekly review', 'date': '14/11/2023', 'time': '9:00 AM', 'attendees': ['Theo', 'Rose'], 'location': None, 'duration': '1 hour', 'recurrence': 'weekly', 'notes': None}]"
+26,['Book holiday planning 2023-11-27 1:15pm with Sarah for 40 minutes.']," {'action': 'book holiday planning', 'date': '11/27/2023', 'time': '1:15pm', 'attendees': None, 'location': 'café', 'duration': '40 minutes', 'recurrence': None, 'notes': None'}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Book holiday planning "," {'action': 'Book holiday planning', 'date': '2023-11-27', 'time': '1:15 PM', 'attendees': ['Sarah'], 'location': None, 'duration': '40 minutes', 'recurrence': None, 'notes': None}","[{'action': 'Book holiday planning', 'date': '2023-11-27', 'time': '1:15 PM', 'attendees': ['Sarah'], 'location': None, 'duration': '40 minutes', 'recurrence': None, 'notes': None}]"
+27,['Discussion with Olivia and Ethan on 08 - January - 2024 at 1:15pm lasting 1 hour over Microsoft Teams.']," ['Discussion with Olivia and Ethan on 08 - January - 2024 at 1:15pm lasting 1 hour over Microsoft Teams.']
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Discussion with Olivia and Ethan on 08 - January - 2024 at 1:15pm lasting 1 hour over Microsoft Teams.']
+AI: ['Discussion"," {'action': 'Discussion with Olivia and Ethan on 08/01/2024 at 1:15 PM, lasting 1 hour, attendees: None, location: '","[{'action': 'Discussion', 'date': '08/01/2024', 'time': '1:15 PM', 'attendees': ['Olivia', 'Ethan'], 'location': 'Microsoft Teams', 'duration': '1 hour', 'recurrence': None, 'notes': None}]"
+28,"['Set up a technical workshop with Olivia, Noah, and Liam on 6th, March 2026 at 3 PM in the IT lab for 3 hours.']"," {'action': 'technical workshop', 'date': '6/03/2026', 'time': '3 PM', 'attendees': None, 'location': 'IT lab', 'duration': '3 hours', 'recurrence': None, 'notes': None}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Set up a technical workshop with Olivia, Noah, and"," {'action': 'Set up a technical workshop', 'date': '06/03/2026', 'time': '3:00 PM', 'attendees': ['Olivia', 'Noah', 'Liam'], 'location': 'IT lab', 'duration': '3 hours', 'recurrence': None, 'notes': None}","[{'action': 'Set up a technical workshop', 'date': '06/03/2026', 'time': '3:00 PM', 'attendees': ['Olivia', 'Noah', 'Liam'], 'location': 'IT lab', 'duration': '3 hours', 'recurrence': None, 'notes': None}]"
+29,"['Quick feedback 3rd, Apr 2024 9:45 am w/ Sonia Teams 30 mins']"," {'action': 'feedback', 'date': '3rd Apr 2024', 'time': '9:45 am', 'attendees': None, 'location': '30 mins', 'duration': '30 mins', 'recurrence': None, 'notes': None}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Quick feedback 3rd, Apr "," {'action': 'Quick feedback', 'date': '03/04/2024', 'time': '9:45 AM', 'attendees': ['Sonia'], 'location': 'Teams', 'duration': '30 mins', 'recurrence': None, 'notes': None}","[{'action': 'Quick feedback', 'date': '03/04/2024', 'time': '9:45 AM', 'attendees': ['Sonia'], 'location': 'Teams', 'duration': '30 mins', 'recurrence': None, 'notes': None}]"
+30,['Check-in 2023-10-22 11:30\u202fam w/ Jake & Emma Google Meet 20m']," ['Check-in 2023-10-22 11:30\u202f Jake & Emma Google Meet 20m']
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Check-in 2023-10-22 11:30\u202f Jake & Emma Google Meet 20m"," {'action': 'Check-in 2023-10-22 11:30 PM', 'date': '20/10/2023', 'time': '11:30 AM', 'attendees': ['Jake', 'Emma'], 'location': 'Google Meet', 'duration': '20m', 'recurrence': None, 'notes': None}","[{'action': 'Check-in', 'date': '2023-10-22', 'time': '11:30 AM', 'attendees': ['Jake', 'Emma'], 'location': 'Google Meet', 'duration': '20m', 'recurrence': None, 'notes': None}]"
+31,"['Discuss deliverables June 19, 2024 at 3:35pm with Zoe, Ava, and Gil']"," {'action': 'discuss deliverables', 'date': 'June 19, 2024', 'time': '3:35 pm', 'attendees': None, 'location': 'café', 'duration': '2 hours', 'recurrence': None, 'notes': None'}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Discuss deliverables June"," {'action': 'Discuss deliverables', 'date': '19/06/2024', 'time': '3:35 PM', 'attendees': ['Zoe', 'Ava', 'Gil'], 'location': None, 'duration': None, 'recurrence': None, 'notes': None}","[{'action': 'Discuss deliverables', 'date': '19/06/2024', 'time': '3:35 PM', 'attendees': ['Zoe', 'Ava', 'Gil'], 'location': None, 'duration': None, 'recurrence': None, 'notes': None}]"
+32,"['Breakfast meeting with Taylor at Downtown Cafe on April 3, 2024, 9:30 am for 1 hour.']"," {'action': 'breakfast meeting', 'date': 'April 3, 2024', 'time': '9:30 am', 'attendees': None, 'location': 'Downtown Cafe', 'duration': '1 hour', 'recurrence': None, 'notes': None'}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Breakfast meeting"," {'action': 'Breakfast meeting', 'date': '03/04/2024', 'time': '9:30 AM', 'attendees': ['Taylor'], 'location': 'Downtown Cafe', 'duration': '1 hour', 'recurrence': None, 'notes': None}","[{'action': 'Breakfast meeting', 'date': '03/04/2024', 'time': '9:30 AM', 'attendees': ['Taylor'], 'location': 'Downtown Cafe', 'duration': '1 hour', 'recurrence': None, 'notes': None}]"
+33,"['Dinner with Emily at Mario’s Grill on April 8, 2024, 7:00 pm for 2 hours.']"," {'action': 'dinner', 'date': 'April 8, 2024', 'time': '7:00 pm', 'attendees': None, 'location': 'Mario’s Grill', 'duration': '2 hours', 'recurrence': None, 'notes': None'}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Dinner with Emily"," {'action': 'Dinner', 'date': '08/04/2024', 'time': '7:00 PM', 'attendees': None, 'location': 'Mario’s Grill', 'duration': '2 hours', 'recurrence': None, 'notes': None}","[{'action': 'Dinner', 'date': '08/04/2024', 'time': '7:00 PM', 'attendees': ['Emily'], 'location': 'Mario’s Grill', 'duration': '2 hours', 'recurrence': None, 'notes': None}]"
+34,"['Project discussion 28th Jan, 2024 10:00 Teams 45 mins']"," {'action': 'project discussion', 'date': '28/01/2024', 'time': '10:00', 'attendees': None, 'location': 'café', 'duration': '2 hours', 'recurrence': None, 'notes': None'}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Project discussion 28th"," {'action': 'Project discussion', 'date': '28/01/2024', 'time': '10:00 AM', 'attendees': None, 'location': 'Teams', 'duration': '45 mins', 'recurrence': None, 'notes': None}","[{'action': 'Project discussion', 'date': '28/01/2024', 'time': '10:00 AM', 'attendees': None, 'location': 'Teams', 'duration': '45 mins', 'recurrence': None, 'notes': None}]"
+35,"['Catch a movie at the local theater on 21st, Nov 2024 at 8:00 pm, which will last 2 hours.']"," {'action': 'movie', 'date': '21/11/2024', 'time': '8:00 pm', 'attendees': None, 'location': 'local theater', 'duration': '2 hours', 'recurrence': None, 'notes': None'}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Catch a movie at the local theater"," {'action': 'Catch a movie at the local theater', 'date': '21/11/2024', 'time': '8:00 PM', 'attendees': None, 'location': None, 'duration': '2 hours', 'recurrence': None, 'notes': None}","[{'action': 'Catch a movie', 'date': '21/11/2024', 'time': '8:00 PM', 'attendees': None, 'location': 'local theater', 'duration': '2 hours', 'recurrence': None, 'notes': None}]"
+36,"['Dinner with Zoe at The Steakhouse on May 14, 2024, 7:30 pm for 90 mins.']"," {'action': 'dinner', 'date': 'May 14, 2024', 'time': '7:30 pm', 'attendees': None, 'location': 'The Steakhouse', 'duration': '90 mins', 'recurrence': None, 'notes': None'}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Dinner with Z"," {'action': 'Dinner', 'date': '14/05/2024', 'time': '7:30 PM', 'attendees': None, 'location': 'The Steakhouse', 'duration': '90 mins', 'recurrence': None, 'notes': None}","[{'action': 'Dinner', 'date': '14/05/2024', 'time': '7:30 PM', 'attendees': ['Zoe'], 'location': 'The Steakhouse', 'duration': '90 mins', 'recurrence': None, 'notes': None}]"
+37,['Yoga class 10 - Nov - 2023 6:00\u202fpm online']," {'action': 'Yoga class 10 - Nov - 2023 6:00\u202fpm online', 'date': '15/12/2023', 'time': '6:00 PM', 'attendees': ['Yoga class 10 - Nov - 2023 6:00\u202fpm online'], 'location': 'café', '"," {'action': 'Yoga class 10', 'date': '10/11/2023', 'time': '6:00 PM', 'attendees': None, 'location': 'online', 'duration': None, 'recurrence': None, 'notes': None}","[{'action': 'Yoga class', 'date': '10/11/2023', 'time': '6:00 PM', 'attendees': None, 'location': 'online', 'duration': None, 'recurrence': None, 'notes': None}]"
+38,"['2024-03-15 10:30 AM Creative brainstorming with Haley in studio 4, one hour.']"," {'action': 'creative brainstorming', 'date': '2024-03-15', 'time': '10:30 AM', 'attendees': None, 'location': 'studio', 'duration': '2 hours', 'recurrence': None, 'notes': None'}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['2024-0"," {'action': 'Creative brainstorming', 'date': '15/03/2024', 'time': '10:30 AM', 'attendees': None, 'location': 'studio 4', 'duration': '1 hour', 'recurrence': None, 'notes': None}","[{'action': 'Creative brainstorming', 'date': '15/03/2024', 'time': '10:30 AM', 'attendees': ['Haley'], 'location': 'studio 4', 'duration': '1 hour', 'recurrence': None, 'notes': None}]"
+39,['Dev sync 2023-12-05 10:00\u202fam w/ Kate & Leo Zoom 20m']," ['Dev sync 2023-12-05 10:00\u202f\u202f w/ Kate & Leo Zoom 20m']
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Dev sync 2023-12-05 10:00\u202f\u20"," {'action': 'Dev sync', 'date': '15/12/2024', 'time': '10:00 AM', 'attendees': ['Kate', 'Leo'], 'location': 'Zoom', 'duration': '20m', 'recurrence': None, 'notes': None}","[{'action': 'Dev sync', 'date': '2023-12-05', 'time': '10:00 AM', 'attendees': ['Kate', 'Leo'], 'location': 'Zoom', 'duration': '20m', 'recurrence': None, 'notes': None}]"
+40,"['Tech support call on Microsoft Teams 6th Mar, 2024 11:00']"," {'action': 'call', 'date': '6th Mar, 2024', 'time': '11:00 PM', 'attendees': None, 'location': 'Microsoft Teams', 'duration': '6 hours', 'recurrence': None, 'notes': None}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Tech support call on Microsoft Teams 6"," {'action': 'Tech support call on Microsoft Teams 6th Mar, 2024, 'date': '06/03/2024', 'time': '11:00 AM', 'attendees': None, 'location': None, 'duration': None, 'recurrence': None, 'notes': None}","[{'action': 'Tech support call', 'date': '06/03/2024', 'time': '11:00 AM', 'attendees': None, 'location': 'Microsoft Teams', 'duration': None, 'recurrence': None, 'notes': None}]"
+41,"['Presentation review 30/11/2023 at 11am with Dan and Lucy, 1 hour.']"," {'action': 'Presentation review', 'date': '11/11/2023', 'time': '1 hour', 'attendees': None, 'location': 'café', 'duration': '30 minutes', 'recurrence': None, 'notes': None}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Presentation review 30/11"," {'action': 'Presentation review', 'date': '30/11/2023', 'time': '11:00 AM', 'attendees': ['Dan', 'Lucy'], 'location': None, 'duration': '1 hour', 'recurrence': None, 'notes': None}","[{'action': 'Presentation review', 'date': '30/11/2023', 'time': '11:00 AM', 'attendees': ['Dan', 'Lucy'], 'location': None, 'duration': '1 hour', 'recurrence': None, 'notes': None}]"
+42,"['Catch up with marketing on June 2, 2024 at 14:00 for 45 minutes.']"," {'action': 'marketing', 'date': 'June 2, 2024', 'time': '14:00', 'attendees': None, 'location': 'café', 'duration': '45 minutes', 'recurrence': None, 'notes': None}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Catch up with marketing on"," {'action': 'Catch up with marketing', 'date': '02/06/2024', 'time': '14:00', 'attendees': None, 'location': None, 'duration': '45 minutes', 'recurrence': None, 'notes': None}","[{'action': 'Catch up with marketing', 'date': '02/06/2024', 'time': '14:00', 'attendees': None, 'location': None, 'duration': '45 minutes', 'recurrence': None, 'notes': None}]"
+43,['Study session 19 - Nov - 2023 3:45\u202fpm Zoom']," {'action': 'study session', 'date': '19/Nov/2023', 'time': '3:45 PM', 'attendees': None, 'location': 'café', 'duration': '19 hours', 'recurrence': None, 'notes': None}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Study session 19 -"," {'action': 'Study session', 'date': '19/11/2023', 'time': '3:45 PM', 'attendees': None, 'location': 'Zoom', 'duration': None, 'recurrence': None, 'notes': None}","[{'action': 'Study session', 'date': '19/11/2023', 'time': '3:45 PM', 'attendees': None, 'location': 'Zoom', 'duration': None, 'recurrence': None, 'notes': None}]"
+44,"['Feedback chat March 11, 2024, 12:00\u202fpm, 20 mins via Slack.']"," {'action': 'chat', 'date': 'March 11, 2024', 'time': '12:00 pm', 'attendees': None, 'location': 'café', 'duration': '2 hours', 'recurrence': None, 'notes': None'}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Feedback chat March 1"," {'action': 'Feedback chat', 'date': '11/03/2024', 'time': '12:00 PM', 'attendees': None, 'location': 'Slack', 'duration': '20 mins', 'recurrence': None, 'notes': None}","[{'action': 'Feedback chat', 'date': '11/03/2024', 'time': '12:00 PM', 'attendees': None, 'location': 'Slack', 'duration': '20 mins', 'recurrence': None, 'notes': None}]"
+45,"['Team brainstorming March 10, 2024 at 2pm w/ Lily, Carl, and Yara']"," {'action': 'brainstorming', 'date': 'March 10, 2024', 'time': '2pm', 'attendees': None, 'location': 'café', 'duration': '2 hours', 'recurrence': None, 'notes': None'}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Team brainstorming March 10, "," {'action': 'Team brainstorming', 'date': '10/03/2024', 'time': '2:00 PM', 'attendees': ['Lily', 'Carl', 'Yara'], 'location': None, 'duration': None, 'recurrence': None, 'notes': None}","[{'action': 'Team brainstorming', 'date': '10/03/2024', 'time': '2:00 PM', 'attendees': ['Lily', 'Carl', 'Yara'], 'location': None, 'duration': None, 'recurrence': None, 'notes': None}]"
+46,"['Project review with John on March 12, 2024, 11:00 am at Meeting Room A for 1 hour.']"," ['Project review with John on March 12, 2024, 11:00 am at Meeting Room A for 1 hour.']
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Project review with John on March 12, 2024, 11:00 am at Meeting Room A for 1 hour.']
+AI: ['Project"," {'action': 'Project review', 'date': '12/03/2024', 'time': '11:00 AM', 'attendees': None, 'location': 'Meet Room A', 'duration': '1 hour', 'recurrence': None, 'notes': None}","[{'action': 'Project review', 'date': '12/03/2024', 'time': '11:00 AM', 'attendees': ['John'], 'location': 'Meeting Room A', 'duration': '1 hour', 'recurrence': None, 'notes': None}]"
+47,['Schedule project kickoff 2023-12-15 2pm with Alex for 1 hour.']," {'action': 'schedule project kickoff', 'date': '2023-12-15', 'time': '2pm', 'attendees': None, 'location': 'café', 'duration': '1 hour', 'recurrence': None, 'notes': None'}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Schedule project kickoff 20"," {'action': 'Schedule project kickoff', 'date': '15/12/2024', 'time': '2:00 PM', 'attendees': ['Alex'], 'location': None, 'duration': '1 hour', 'recurrence': None, 'notes': None}","[{'action': 'Schedule project kickoff', 'date': '2023-12-15', 'time': '2:00 PM', 'attendees': ['Alex'], 'location': None, 'duration': '1 hour', 'recurrence': None, 'notes': None}]"
+48,"['Check-in w/ Emily 19th, Dec 2023 10:00 HQ 15min']"," ['Check-in w/ Emily 19th, Dec 2023 10:00 HQ 15min']
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Check-in w/ Emily 19th, Dec 2023 10:00 HQ 15min']
+AI: ['Check-in w/ Emily "," {'action': 'Check-in', 'date': '19/12/2023', 'time': '10:00 AM', 'attendees': ['Emily'], 'location': 'HQ 15min', 'duration': None, 'recurrence': None, 'notes': None}","[{'action': 'Check-in', 'date': '19/12/2023', 'time': '10:00 AM', 'attendees': ['Emily'], 'location': 'HQ', 'duration': '15min', 'recurrence': None, 'notes': None}]"
+49,['Demo meeting 03 - Nov - 2023 11:15\u202fam Google Meet']," {'action': 'meeting', 'date': '11/15/2023', 'time': '11:15 AM', 'attendees': None, 'location': 'Google Meet', 'duration': '1 hour', 'recurrence': None, 'notes': None'}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Meeting 03 -"," {'action': 'Demo meeting', 'date': '03/11/2023', 'time': '11:15 AM', 'attendees': None, 'location': 'Google Meet', 'duration': None, 'recurrence': None, 'notes': None}","[{'action': 'Demo meeting', 'date': '03/11/2023', 'time': '11:15 AM', 'attendees': None, 'location': 'Google Meet', 'duration': None, 'recurrence': None, 'notes': None}]"
+50,"['Budget review 2024-02-14 3:00\u202fpm Zoe, Dean, Chris 45mins']"," ['Budget review 2024-02-14 3:00\u202fpm Zoe, Dean, Chris 45mins']
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Budget review 2024-02-14 3:00\u202fpm Zoe, Dean, Chris 4"," {'action': 'Budget review', 'date': '14/02/2024', 'time': '3:00 PM', 'attendees': ['Zoe', 'Dean', 'Chris'], 'location': None, 'duration': '45 mins', 'recurrence': None, 'notes': None}","[{'action': 'Budget review', 'date': '2024-02-14', 'time': '3:00 PM', 'attendees': ['Zoe', 'Dean', 'Chris'], 'location': None, 'duration': '45 mins', 'recurrence': None, 'notes': None}]"
+51,"['Arrange product launch 28/12/2023 2pm Main Showroom with Lisa, Ryan, and Chloe 2hrs.']"," {'action': 'product launch', 'date': '28/12/2023', 'time': '2pm', 'attendees': None, 'location': 'Main Showroom', 'duration': '2 hours', 'recurrence': None, 'notes': None}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Arrange product launch 28/1"," {'action': 'Arrange product launch', 'date': '28/12/2023', 'time': '2:00 PM', 'attendees': ['Lisa', 'Ryan', 'Chloe'], 'location': 'Main Showroom', 'duration': '2hrs', 'recurrence': None, 'notes': None}","[{'action': 'Arrange product launch', 'date': '28/12/2023', 'time': '2:00 PM', 'attendees': ['Lisa', 'Ryan', 'Chloe'], 'location': 'Main Showroom', 'duration': '2hrs', 'recurrence': None, 'notes': None}]"
+52,"['November 4, 2024 2pm leadership sync Alex, Olivia, Ryan on Skype']"," {'action': 'leadership sync', 'date': 'November 4, 2024', 'time': '2pm', 'attendees': None, 'location': 'café', 'duration': '2 hours', 'recurrence': None, 'notes': None}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['November 4, 2024"," {'action': 'leadership sync', 'date': '04/11/2024', 'time': '2:00 PM', 'attendees': ['Alex', 'Olivia', 'Ryan'], 'location': 'Skype', 'duration': None, 'recurrence': None, 'notes': None}","[{'action': 'leadership sync', 'date': '04/11/2024', 'time': '2:00 PM', 'attendees': ['Alex', 'Olivia', 'Ryan'], 'location': 'Skype', 'duration': None, 'recurrence': None, 'notes': None}]"
+53,"['10th Jul, 2024 14:00 product demo on Google Meet']"," {'action': 'product demo', 'date': '10/7/2024', 'time': '14:00', 'attendees': None, 'location': 'google meet', 'duration': '2 hours', 'recurrence': None, 'notes': None'}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['10th Jul, 20"," {'action': 'product demo', 'date': '10/07/2024', 'time': '14:00', 'attendees': None, 'location': 'Google Meet', 'duration': None, 'recurrence': None, 'notes': None}","[{'action': 'product demo', 'date': '10/07/2024', 'time': '14:00', 'attendees': None, 'location': 'Google Meet', 'duration': None, 'recurrence': None, 'notes': None}]"
+54,"['Quick sync Feb 23, 2024 10:30am 20min w/ Maya + Ali']"," {'action': 'sync', 'date': '23/Feb/2024', 'time': '10:30am', 'attendees': None, 'location': 'café', 'duration': '2 hours', 'recurrence': None, 'notes': None}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Quick sync Feb 23,"," {'action': 'Quick sync', 'date': '23/02/2024', 'time': '10:30 AM', 'attendees': ['Maya', 'Ali'], 'location': None, 'duration': '20 minutes', 'recurrence': None, 'notes': None}","[{'action': 'Quick sync', 'date': '23/02/2024', 'time': '10:30 AM', 'attendees': ['Maya', 'Ali'], 'location': None, 'duration': '20 minutes', 'recurrence': None, 'notes': None}]"
+55,"['Plan for a progress update on March 28, 2027 at 12:05, make it 60 minutes max.']"," ['Plan for a progress update on March 28, 2027 at 12:05, make it 60 minutes max.']
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Plan for a progress update on March 28, 2027 at 12:05, make it 60 minutes max.']
+AI: ['Plan"," {'action': 'Plan for a progress update', 'date': '28/03/2027', 'time': '12:05 PM', 'attendees': None, 'location': None, 'duration': '60 minutes', 'recurrence': None, 'notes': None}","[{'action': 'Plan for a progress update', 'date': '28/03/2027', 'time': '12:05 PM', 'attendees': None, 'location': None, 'duration': '60 minutes', 'recurrence': None, 'notes': None}]"
+56,['Arrange marketing plan review 2023-12-08 3pm with Emma for 2 hours.']," {'action': 'marketing plan review', 'date': '2023-12-08', 'time': '3pm', 'attendees': None, 'location': 'café', 'duration': '2 hours', 'recurrence': None, 'notes': None}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Arrange marketing plan review 2"," {'action': 'Arrange marketing plan review', 'date': '2023-12-08', 'time': '3:00 PM', 'attendees': ['Emma'], 'location': None, 'duration': '2 hours', 'recurrence': None, 'notes': None}","[{'action': 'Arrange marketing plan review', 'date': '2023-12-08', 'time': '3:00 PM', 'attendees': ['Emma'], 'location': None, 'duration': '2 hours', 'recurrence': None, 'notes': None}]"
+57,"['2023-12-01 5 PM Coffee break with Alex, bookstore on Oak Street, one hour.']"," {'action': 'study session', 'date': '2023-12-01', 'time': '5 PM', 'attendees': None, 'location': 'café', 'duration': '2 hours', 'recurrence': None, 'notes': None}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['2023-12-0"," {'action': 'Human Break', 'date': '01/12/2023', 'time': '5:00 PM', 'attendees': ['Alex'], 'location': 'Bookstore on Oak Street', 'duration': '1 hour', 'recurrence': None, 'notes': None}","[{'action': 'Coffee break', 'date': '01/12/2023', 'time': '5:00 PM', 'attendees': ['Alex'], 'location': 'bookstore on Oak Street', 'duration': '1 hour', 'recurrence': None, 'notes': None}]"
+58,"['Talk w/ vendor Feb 5, 2024 2pm 1hr w/ Emily + John']"," {'action': 'talk w/ vendor', 'date': '25/02/2024', 'time': '1pm', 'attendees': None, 'location': 'café', 'duration': '2 hours', 'recurrence': None, 'notes': None}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Talk w/ vendor Feb 5"," {'action': 'Talk w/ vendor', 'date': '05/02/2024', 'time': '2:00 PM', 'attendees': ['Emily', 'John'], 'location': None, 'duration': '1 hour', 'recurrence': None, 'notes': None}","[{'action': 'Talk w/ vendor', 'date': '05/02/2024', 'time': '2:00 PM', 'attendees': ['Emily', 'John'], 'location': None, 'duration': '1hr', 'recurrence': None, 'notes': None}]"
+59,['Kickoff call 2024-02-15 1:30\u202fpm w/ Josh & Ryan Zoom 30m']," {'action': 'kickoff call', 'date': '2024-02-15', 'time': '1:30 PM', 'attendees': None, 'location': 'café', 'duration': '2 hours', 'recurrence': None, 'notes': None'}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Kickoff call "," {'action': 'Kickoff call 2024-02-15 1:30 PM', 'date': '15/02/2024', 'time': '30m', 'attendees': ['Josh', 'Ryan'], 'location': 'Zoom', 'duration': None, 'recurrence': None, 'notes': None}","[{'action': 'Kickoff call', 'date': '2024-02-15', 'time': '1:30 PM', 'attendees': ['Josh', 'Ryan'], 'location': 'Zoom', 'duration': '30m', 'recurrence': None, 'notes': None}]"
+60,"['Draft review with Cheryl, John, and Paige Aug 3, 2024 at 4pm']"," {'action': 'review', 'date': 'Aug 3, 2024', 'time': '4 pm', 'attendees': None, 'location': 'café', 'duration': '2 hours', 'recurrence': None, 'notes': None'}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Draft review with Cheryl, John, and Pa"," {'action': 'Draft review', 'date': '03/08/2024', 'time': '4:00 PM', 'attendees': ['Cheryl', 'John', 'Paige'], 'location': None, 'duration': None, 'recurrence': None, 'notes': None}","[{'action': 'Draft review', 'date': '03/08/2024', 'time': '4:00 PM', 'attendees': ['Cheryl', 'John', 'Paige'], 'location': None, 'duration': None, 'recurrence': None, 'notes': None}]"
+61,"['Schedule a product launch run-through on October 28, 2024 at 1:00 pm for 2 hours with Henry and Monica at the Event Hall.']"," {'action': 'launch run-through', 'date': 'October 28, 2024', 'time': '1:00 pm', 'attendees': None, 'location': 'event hall', 'duration': '2 hours', 'recurrence': None, 'notes': None'}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Schedule a product launch run"," {'action': 'Schedule a product launch run-through', 'date': '28/10/2024', 'time': '1:00 PM', 'attendees': ['Henry', 'Monica'], 'location': 'Event Hall', 'duration': '2 hours', 'recurrence': None, 'notes': None}","[{'action': 'Schedule a product launch run-through', 'date': '28/10/2024', 'time': '1:00 PM', 'attendees': ['Henry', 'Monica'], 'location': 'Event Hall', 'duration': '2 hours', 'recurrence': None, 'notes': None}]"
+62,"['Check-in call 7th Nov, 2024 10:30 45 mins on Zoom']"," {'action': 'check-in call', 'date': '11/11/2024', 'time': '45 mins', 'attendees': None, 'location': 'café', 'duration': '45 mins', 'recurrence': None, 'notes': None}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Check-in call "," {'action': 'Check-in call', 'date': '07/11/2024', 'time': '10:30 AM', 'attendees': None, 'location': 'Zoom', 'duration': '45 mins', 'recurrence': None, 'notes': None}","[{'action': 'Check-in call', 'date': '07/11/2024', 'time': '10:30 AM', 'attendees': None, 'location': 'Zoom', 'duration': '45 mins', 'recurrence': None, 'notes': None}]"
+63,"['Game night at my place on 24th, Apr 2024, 7:00 pm, lasting a few hours.']"," {'action': 'game night', 'date': '24/04/2024', 'time': '7:00 pm', 'attendees': None, 'location': 'my place', 'duration': 'several hours', 'recurrence': None, 'notes': None'}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Game night at my place on "," {'action': 'Game night', 'date': '24/04/2024', 'time': '7:00 PM', 'attendees': None, 'location': None, 'duration': '3 hours', 'recurrence': None, 'notes': None}","[{'action': 'Game night', 'date': '24/04/2024', 'time': '7:00 PM', 'attendees': None, 'location': 'my place', 'duration': 'a few hours', 'recurrence': None, 'notes': None}]"
+64,"['Presentation Sarah 2nd, Nov 2023 11:00 Auditorium 2hrs']"," {'action': 'Presentation', 'date': '11/11/2023', 'time': '11:00', 'attendees': None, 'location': 'Auditorium', 'duration': '2 hours', 'recurrence': None, 'notes': None'}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Presentation Sarah 2nd, Nov"," {'action': 'Presentation', 'date': '02/11/2023', 'time': '11:00 AM', 'attendees': ['Sarah'], 'location': 'Auditorium', 'duration': '2hrs', 'recurrence': None, 'notes': None}","[{'action': 'Presentation', 'date': '02/11/2023', 'time': '11:00 AM', 'attendees': ['Sarah'], 'location': 'Auditorium', 'duration': '2hrs', 'recurrence': None, 'notes': None}]"
+65,"['Quarterly review 20th, Sep 2025 2:00 pm w/ Tom on Zoom 1 hr']"," {'action': 'review', 'date': '20/9/2025', 'time': '2:00 pm', 'attendees': None, 'location': 'zoom', 'duration': '2 hours', 'recurrence': None, 'notes': None}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Quarterly review 20th, Sep"," {'action': 'Quarterly review', 'date': '20/09/2025', 'time': '2:00 PM', 'attendees': ['Tom'], 'location': 'Zoom', 'duration': '1 hr', 'recurrence': None, 'notes': None}","[{'action': 'Quarterly review', 'date': '20/09/2025', 'time': '2:00 PM', 'attendees': ['Tom'], 'location': 'Zoom', 'duration': '1 hr', 'recurrence': None, 'notes': None}]"
+66,"['Lunch with Ben at Central Park Cafe on March 5, 2024, 1:00 pm for 1 hour.']"," {'action': 'Lunch with Ben at Central Park Cafe on March 5, 2024, 1:00 pm for 1 hour.',
+'date': 'March 5, 2024', 'time': '1:00 pm', 'attendees': None, 'location': 'Central Park', 'duration': '1 hour', 'recurrence': None, 'notes': None'}
+--------------------------
+Please extract the entities"," {'action': 'Lunch with Ben', 'date': '05/03/2024', 'time': '1:00 PM', 'attendees': None, 'location': 'Central Park Cafe', 'duration': '1 hour', 'recurrence': None, 'notes': None}","[{'action': 'Lunch', 'date': '05/03/2024', 'time': '1:00 PM', 'attendees': ['Ben'], 'location': 'Central Park Cafe', 'duration': '1 hour', 'recurrence': None, 'notes': None}]"
+67,['Financial review 2023-10-25 10:30\u202fam w/ Ella & Mark Webex 1h']," ['Financial review 2023-10-25 10:30\u202f\u202f w/ Ella & Mark Webex 1h']
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Financial review 2023-10-25 10:30\u202f\u20"," {'action': 'Financial review', 'date': '2023-10-25', 'time': '10:30 AM', 'attendees': ['Ella', 'Mark'], 'location': 'Webex', 'duration': '1h', 'recurrence': None, 'notes': None}","[{'action': 'Financial review', 'date': '2023-10-25', 'time': '10:30 AM', 'attendees': ['Ella', 'Mark'], 'location': 'Webex', 'duration': '1h', 'recurrence': None, 'notes': None}]"
+68,"['Plan design review 15/10/2023 10am Main Office with Sarah, Tom, and Lisa 30mins.']"," ['Plan design review 15/10/2023 10am Main Office with Sarah, Tom, and Lisa 30mins.']
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Plan design review 15/10/2023 10am Main Office with Sarah, Tom, and Lisa 30mins.']
+AI: ['Plan"," {'action': 'Plan design review', 'date': '15/10/2023', 'time': '10:00 AM', 'attendees': ['Sarah', 'Tom', 'Lisa'], 'location': 'Main Office', 'duration': '30 mins', 'recurrence': None, 'notes': None}","[{'action': 'Plan design review', 'date': '15/10/2023', 'time': '10:00 AM', 'attendees': ['Sarah', 'Tom', 'Lisa'], 'location': 'Main Office', 'duration': '30mins', 'recurrence': None, 'notes': None}]"
+69,"['Dentist appointment at the clinic on 22nd, Aug 2024 at 11:00 am for about 45 minutes.']"," {'action': 'appointment', 'date': '22/08/2024', 'time': '11:00 am', 'attendees': None, 'location': 'clinic', 'duration': '45 minutes', 'recurrence': None, 'notes': None}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Dentist appointment at"," {'action': 'Dentist appointment', 'date': '22/08/2024', 'time': '11:00 AM', 'attendees': None, 'location': 'the clinic', 'duration': '45 minutes', 'recurrence': None, 'notes': None}","[{'action': 'Dentist appointment', 'date': '22/08/2024', 'time': '11:00 AM', 'attendees': None, 'location': 'the clinic', 'duration': '45 minutes', 'recurrence': None, 'notes': None}]"
+70,"['April 18, 2024 12pm align strategy Alex, Sam, Kate on Skype']"," {'action': 'study session', 'date': 'April 18, 2024', 'time': '12pm', 'attendees': None, 'location': 'café', 'duration': '2 hours', 'recurrence': None, 'notes': None'}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['April 18, 20"," {'action': 'align strategy', 'date': '18/04/2024', 'time': '12:00 PM', 'attendees': ['Alex', 'Sam', 'Kate'], 'location': 'Skype', 'duration': None, 'recurrence': None, 'notes': None}","[{'action': 'align strategy', 'date': '18/04/2024', 'time': '12:00 PM', 'attendees': ['Alex', 'Sam', 'Kate'], 'location': 'Skype', 'duration': None, 'recurrence': None, 'notes': None}]"
+71,"['Brunch at the new café on 16th, Jan 2025 at 10:30 am for an hour and a half.']"," {'action': 'brunch', 'date': '16/01/2025', 'time': '10:30 am', 'attendees': None, 'location': 'new café', 'duration': 'an hour and a half', 'recurrence': None, 'notes': None'}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Brunch at"," {'action': 'Brunch', 'date': '16/01/2025', 'time': '10:30 AM', 'attendees': None, 'location': None, 'duration': '1 hour and a half', 'recurrence': None, 'notes': None}","[{'action': 'Brunch', 'date': '16/01/2025', 'time': '10:30 AM', 'attendees': None, 'location': 'new café', 'duration': '1 hour 30 minutes', 'recurrence': None, 'notes': None}]"
+72,"['Client sync on Teams 13th May, 2024 09:30']"," {'action': 'sync', 'date': '13/May/2024', 'time': '09:30', 'attendees': None, 'location': 'teams', 'duration': '13 hours', 'recurrence': None, 'notes': None'}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Client sync on Teams 13th"," {'action': 'Client sync on Teams 13th May, 2024 09:30, recurrence': None, 'date': '13/05/2024', 'time': '09:30 AM', 'attendees': None, 'location': None, 'duration': None, 'recurrence': None, 'notes': None}","[{'action': 'Client sync', 'date': '13/05/2024', 'time': '09:30 AM', 'attendees': None, 'location': 'Teams', 'duration': None, 'recurrence': None, 'notes': None}]"
+73,"['Design workshop 2023-12-19 9:45\u202fam Claire, Nate, Eve']"," {'action': 'design workshop', 'date': '2023-12-19', 'time': '9:45 PM', 'attendees': None, 'location': 'café', 'duration': '2 hours', 'recurrence': None, 'notes': None'}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Design workshop 202"," {'action': 'Design workshop', 'date': '19/12/2023', 'time': '9:45 AM', 'attendees': ['Claire', 'Nate', 'Eve'], 'location': None, 'duration': None, 'recurrence': None, 'notes': None}","[{'action': 'Design workshop', 'date': '2023-12-19', 'time': '9:45 AM', 'attendees': ['Claire', 'Nate', 'Eve'], 'location': None, 'duration': None, 'recurrence': None, 'notes': None}]"
+74,"['Set up a follow-up on October 12, 2024 at 10:45, let’s keep it brief at 30 minutes.']"," {'action': 'follow-up', 'date': '12/12/2024', 'time': '10:45', 'attendees': None, 'location': 'café', 'duration': '30 minutes', 'recurrence': None, 'notes': None}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Set up a follow"," {'action': 'Set up a follow-up', 'date': '12/10/2024', 'time': '10:45 AM', 'attendees': None, 'location': None, 'duration': '30 minutes', 'recurrence': None, 'notes': None}","[{'action': 'Set up a follow-up', 'date': '12/10/2024', 'time': '10:45 AM', 'attendees': None, 'location': None, 'duration': '30 minutes', 'recurrence': None, 'notes': None}]"
+75,"['March 7, 2024 5am product sync Alex, Emma, Liam via Skype']"," {'action': 'product sync', 'date': 'March 7, 2024', 'time': '5am', 'attendees': None, 'location': 'café', 'duration': '2 hours', 'recurrence': None, 'notes': None'}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['March 7, 2024 "," {'action': 'product sync', 'date': '07/03/2024', 'time': '5:00 AM', 'attendees': ['Alex', 'Emma', 'Liam'], 'location': 'Skype', 'duration': None, 'recurrence': None, 'notes': None}","[{'action': 'product sync', 'date': '07/03/2024', 'time': '5:00 AM', 'attendees': ['Alex', 'Emma', 'Liam'], 'location': 'Skype', 'duration': None, 'recurrence': None, 'notes': None}]"
+76,"['Organize a final project review on 9th, September 2027 at 11 AM with Chloe, Emily, and Alex in the project room for 1 hour.']"," {'action': 'final project review', 'date': '9/9/2027', 'time': '11 AM', 'attendees': None, 'location': 'project room', 'duration': '1 hour', 'recurrence': None, 'notes': None}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Organize a final project review on 9th"," {'action': 'Organize a final project review', 'date': '09/09/2027', 'time': '11:00 AM', 'attendees': ['Chloe', 'Emily', 'Alex'], 'location': 'project room', 'duration': '1 hour', 'recurrence': None, 'notes': None}","[{'action': 'Organize a final project review', 'date': '09/09/2027', 'time': '11:00 AM', 'attendees': ['Chloe', 'Emily', 'Alex'], 'location': 'project room', 'duration': '1 hour', 'recurrence': None, 'notes': None}]"
+77,"['Weekly check-in Feb 5, 2024 9:30am 45min w/ team']"," {'action': 'check-in', 'date': '2024-02-05', 'time': '9:30am', 'attendees': None, 'location': 'café', 'duration': '45min', 'recurrence': None, 'notes': None'}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Weekly check-"," {'action': 'Weekly check-in', 'date': '05/02/2024', 'time': '9:30 AM', 'attendees': ['team'], 'location': None, 'duration': '45 minutes', 'recurrence': None, 'notes': None}","[{'action': 'Weekly check-in', 'date': '05/02/2024', 'time': '9:30 AM', 'attendees': ['team'], 'location': None, 'duration': '45 minutes', 'recurrence': 'weekly', 'notes': None}]"
+78,"['Finalize quote Feb 18, 2024 9am 1hr w/ finance team']"," {'action': 'finalize quote', 'date': '2024-02-18', 'time': '9am', 'attendees': None, 'location': 'café', 'duration': '2 hours', 'recurrence': None, 'notes': None'}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Finalize quote Feb 18,"," {'action': 'Finalize quote', 'date': '18/02/2024', 'time': '9:00 AM', 'attendees': ['finance team'], 'location': None, 'duration': '1 hour', 'recurrence': None, 'notes': None}","[{'action': 'Finalize quote', 'date': '18/02/2024', 'time': '9:00 AM', 'attendees': ['finance team'], 'location': None, 'duration': '1 hour', 'recurrence': None, 'notes': None}]"
+79,['Sprint planning 25 - Nov - 2023 9:15\u202fam Google Meet']," {'action': 'planning', 'date': 'Nov', 'time': '9:15', 'attendees': None, 'location': 'Google Meet', 'duration': '2 hours', 'recurrence': None, 'notes': None}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Sprint planning 25 - Nov - 2023 9:"," {'action': 'Sprint planning', 'date': '25/11/2023', 'time': '9:15 AM', 'attendees': None, 'location': 'Google Meet', 'duration': None, 'recurrence': None, 'notes': None}","[{'action': 'Sprint planning', 'date': '25/11/2023', 'time': '9:15 AM', 'attendees': None, 'location': 'Google Meet', 'duration': None, 'recurrence': None, 'notes': None}]"
+80,"['Annual review 2nd, Feb 2027 11:00 am w/ Lana on Google Meet 1 hr']"," ['Annual review 2nd, Feb 2027 11:00 am w/ Lana on Google Meet 1 hr']
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Annual review 2nd, Feb 2027 11:00 am w/ Lana on Google Meet 1 hr']
+AI: ['Annual review 2nd, Feb"," {'action': 'Annual review', 'date': '02/02/2027', 'time': '11:00 AM', 'attendees': ['Lana'], 'location': 'Google Meet', 'duration': '1 hr', 'recurrence': None, 'notes': None}","[{'action': 'Annual review', 'date': '02/02/2027', 'time': '11:00 AM', 'attendees': ['Lana'], 'location': 'Google Meet', 'duration': '1 hr', 'recurrence': 'Annual', 'notes': None}]"
+81,"['Business lunch at that seafood spot on 2nd, Nov 2024 at 1:00 pm for roughly 2 hours.']"," {'action': 'business lunch', 'date': '2nd, Nov 2024', 'time': '1:00 pm', 'attendees': None, 'location': 'seafood spot', 'duration': '2 hours', 'recurrence': None, 'notes': None'}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Business lunch at that seafood spot"," {'action': 'Business lunch', 'date': '02/11/2024', 'time': '1:00 PM', 'attendees': None, 'location': 'that seafood spot', 'duration': '2 hours', 'recurrence': None, 'notes': None}","[{'action': 'Business lunch', 'date': '02/11/2024', 'time': '1:00 PM', 'attendees': None, 'location': 'that seafood spot', 'duration': '2 hours', 'recurrence': None, 'notes': None}]"
+82,"['Catch-up about project on July 25, 2024 at 11am w/ team (1 hour)']"," {'action': 'Catch-up about project on July 25, 2024 at 11am w/ team (1 hour)'}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Catch-up about project on July 25, 2024 at 11am w/ team (1 hour)']
+AI: {'action': 'C"," {'action': 'Catch-up about project', 'date': '25/07/2024', 'time': '11:00 AM', 'attendees': ['team'], 'location': None, 'duration': '1 hour', 'recurrence': None, 'notes': None}","[{'action': 'Catch-up about project', 'date': '25/07/2024', 'time': '11:00 AM', 'attendees': ['team'], 'location': None, 'duration': '1 hour', 'recurrence': None, 'notes': None}]"
+83,['Book weekly alignment 2023-12-04 8:30am with John for 1 hour.']," {'action': 'weekly alignment', 'date': '2023-12-04', 'time': '8:30am', 'attendees': None, 'location': 'café', 'duration': '1 hour', 'recurrence': None, 'notes': None'}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Book weekly alignment 20"," {'action': 'Book weekly alignment', 'date': '15/12/2024', 'time': '8:30 AM', 'attendees': ['John'], 'location': None, 'duration': '1 hour', 'recurrence': None, 'notes': None}","[{'action': 'Book weekly alignment', 'date': '2023-12-04', 'time': '8:30 AM', 'attendees': ['John'], 'location': None, 'duration': '1 hour', 'recurrence': 'weekly', 'notes': None}]"
+84,"['Pick up groceries on April 4, 2024, 6:00 pm at Farmer’s Market, 30 mins.']"," ['Pick up groceries on April 4, 2024, 6:00 pm at Farmer’s Market, 30 mins.']
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Pick up groceries on April 4, 2024, 6:00 pm at Farmer’s Market, 30 mins.']
+AI: ['Pick up groceries"," {'action': 'Pick up groceries', 'date': '04/04/2024', 'time': '6:00 PM', 'attendees': None, 'location': 'Farmer’s Market', 'duration': '30 mins', 'recurrence': None, 'notes': None}","[{'action': 'Pick up groceries', 'date': '04/04/2024', 'time': '6:00 PM', 'attendees': None, 'location': 'Farmer’s Market', 'duration': '30 mins', 'recurrence': None, 'notes': None}]"
+85,"['Product review 29th Apr, 2024 09:00 Zoom']"," {'product_review': '29th Apr, 2024 09:00 Zoom', 'user_id': '1234567890123456789012345678901234567890123456789012345678901234567890"," {'action': 'Product review', 'date': '29/04/2024', 'time': '09:00 AM', 'attendees': None, 'location': 'Zoom', 'duration': None, 'recurrence': None, 'notes': None}","[{'action': 'Product review', 'date': '29/04/2024', 'time': '09:00 AM', 'attendees': None, 'location': 'Zoom', 'duration': None, 'recurrence': None, 'notes': None}]"
+86,['2023-12-15 10 AM Meet with Sarah at the downtown café for an hour.']," {'action': 'meet with Sarah', 'date': '15/12/2024', 'time': '9:00 PM', 'attendees': None, 'location': 'café', 'duration': '2 hours', 'recurrence': None, 'notes': None'}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['2023"," {'action': 'Meet', 'date': '15/12/2024', 'time': '10:00 AM', 'attendees': ['Sarah'], 'location': 'downtown café', 'duration': '1 hour', 'recurrence': None, 'notes': None}","[{'action': 'Meet', 'date': '15/12/2023', 'time': '10:00 AM', 'attendees': ['Sarah'], 'location': 'downtown café', 'duration': '1 hour', 'recurrence': None, 'notes': None}]"
+87,"['Design workshop 2023-12-19 9:45\u202fam Claire, Nate, Eve']"," {'action': 'design workshop', 'date': '2023-12-19', 'time': '9:45 PM', 'attendees': None, 'location': 'café', 'duration': '2 hours', 'recurrence': None, 'notes': None'}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Design workshop 202"," {'action': 'Design workshop', 'date': '19/12/2023', 'time': '9:45 AM', 'attendees': ['Claire', 'Nate', 'Eve'], 'location': None, 'duration': None, 'recurrence': None, 'notes': None}","[{'action': 'Design workshop', 'date': '2023-12-19', 'time': '9:45 AM', 'attendees': ['Claire', 'Nate', 'Eve'], 'location': None, 'duration': None, 'recurrence': None, 'notes': None}]"
+88,"['Arrange a customer feedback session on April 7, 2024 at 3:00 pm for 1.5 hours with Walter and Megan at HQ Conference Area.']"," {'action': 'customer feedback session', 'date': 'April 7, 2024', 'time': '3:00 pm', 'attendees': None, 'location': 'HQ Conference Area', 'duration': '1.5 hours', 'recurrence': None, 'notes': None}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Arrange a"," {'action': 'Arrange a customer feedback session', 'date': '07/04/2024', 'time': '3:00 PM', 'attendees': ['Walter', 'Megan'], 'location': 'HQ Conference Area', 'duration': '1.5 hours', 'recurrence': None, 'notes': None}","[{'action': 'Arrange a customer feedback session', 'date': '07/04/2024', 'time': '3:00 PM', 'attendees': ['Walter', 'Megan'], 'location': 'HQ Conference Area', 'duration': '1.5 hours', 'recurrence': None, 'notes': None}]"
+89,"['June 3, 2024 2pm product launch review Sam, Laura, Adam on Zoom']"," {'action': 'product launch review', 'date': 'June 3, 2024', 'time': '2pm', 'attendees': None, 'location': 'zoom', 'duration': '2 hours', 'recurrence': None, 'notes': None'}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['June 3, 2024 2"," {'action': 'product launch review', 'date': '03/06/2024', 'time': '2:00 PM', 'attendees': ['Sam', 'Laura', 'Adam'], 'location': 'Zoom', 'duration': None, 'recurrence': None, 'notes': None}","[{'action': 'product launch review', 'date': '03/06/2024', 'time': '2:00 PM', 'attendees': ['Sam', 'Laura', 'Adam'], 'location': 'Zoom', 'duration': None, 'recurrence': None, 'notes': None}]"
+90,"['Book feedback session 09/12/2023 2:45pm Small Meeting Room with Noah, Megan, and Taylor 1hr.']"," ['Book feedback session 09/12/2023 2:45pm Small Meeting Room with Noah, Megan, and Taylor 1hr.']
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Book feedback session 09/12/2023 2:45pm Small Meeting Room with Noah, Megan, and Taylor 1hr."," {'action': 'Book feedback session', 'date': '09/12/2023', 'time': '2:45 PM', 'attendees': ['Noah', 'Megan', 'Taylor'], 'location': 'Small Meeting Room', 'duration': '1hr', 'recurrence': None, 'notes': None}","[{'action': 'Book feedback session', 'date': '09/12/2023', 'time': '2:45 PM', 'attendees': ['Noah', 'Megan', 'Taylor'], 'location': 'Small Meeting Room', 'duration': '1hr', 'recurrence': None, 'notes': None}]"
+91,"['Product mtg 2024-03-10 11:00\u202fam Mark, Jane, Eric']"," ['Product mtg 2024-03-10 11:00\u202fMark, Jane, Eric']
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Product mtg 2024-03-10 11:00\u202fMark, Jane, Eric']
+AI: ['Product mtg"," {'action': 'Product mtg 2024-03-10 11:00', 'date': '10/03/2024', 'time': None, 'attendees': ['Mark', 'Jane', 'Eric'], 'location': None, 'duration': None, 'recurrence': None, 'notes': None}","[{'action': 'Product mtg', 'date': '10/03/2024', 'time': '11:00 AM', 'attendees': ['Mark', 'Jane', 'Eric'], 'location': None, 'duration': None, 'recurrence': None, 'notes': None}]"
+92,['Catch up with Sam 11 - Nov - 2023 10:00\u202fam virtual']," ['Catch up with Sam 11 - Nov - 2023 10:00\u202f virtual']
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Catch up with Sam 11 - Nov - 2023 10:00\u202f virtual']
+AI: ['Catch up with Sam 1"," {'action': 'Catch up with Sam', 'date': '11/11/2023', 'time': '10:00 AM', 'attendees': None, 'location': 'virtual', 'duration': None, 'recurrence': None, 'notes': None}","[{'action': 'Catch up', 'date': '11/11/2023', 'time': '10:00 AM', 'attendees': ['Sam'], 'location': 'virtual', 'duration': None, 'recurrence': None, 'notes': None}]"
+93,['Brainstorming call on 18 - January - 2024 at 5pm for 45 minutes with Abigail and Oliver on Microsoft Teams.']," ['Brainstorming call on 18 - January - 2024 at 5pm for 45 minutes with Abigail and Oliver on Microsoft Teams.']
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Brainstorming call on 18 - January - 2024 at 5pm for 45 minutes with Abigail and Oliver on Microsoft Teams.']
+AI:"," {'action': 'Brainstorming call', 'date': '18/01/2024', 'time': '5:00 PM', 'attendees': ['Abigail', 'Oliver'], 'location': 'Microsoft Teams', 'duration': '45 minutes', 'recurrence': None, 'notes': None}","[{'action': 'Brainstorming call', 'date': '18/01/2024', 'time': '5:00 PM', 'attendees': ['Abigail', 'Oliver'], 'location': 'Microsoft Teams', 'duration': '45 minutes', 'recurrence': None, 'notes': None}]"
+94,"['Strategy session with Jessica on May 16, 2024, 1:00 pm in Conference Room C, 90 mins.']"," ['Strategy session with Jessica on May 16, 2024, 1:00 pm in Conference Room C, 90 mins.']
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Strategy session with Jessica on May 16, 2024, 1:00 pm in Conference Room C, 90 mins.']
+AI: ['Strategy"," {'action': 'Strategy session', 'date': '16/05/2024', 'time': '1:00 PM', 'attendees': None, 'location': 'Conference Room C, 90 mins.', 'duration': None, 'recurrence': None, 'notes': None}","[{'action': 'Strategy session', 'date': '16/05/2024', 'time': '1:00 PM', 'attendees': ['Jessica'], 'location': 'Conference Room C', 'duration': '90 mins', 'recurrence': None, 'notes': None}]"
+95,"['Brainstorm with Ben, Rachel, and Dan on June 12, 2024 at 2pm']"," {'action': 'brainstorm', 'date': 'June 12, 2024', 'time': '2pm', 'attendees': None, 'location': 'brainstorming room', 'duration': '2 hours', 'recurrence': None, 'notes': None}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Brainstorm with Ben, Rachel, and"," {'action': 'Brainstorm', 'date': '12/06/2024', 'time': '2:00 PM', 'attendees': ['Ben', 'Rachel', 'Dan'], 'location': None, 'duration': None, 'recurrence': None, 'notes': None}","[{'action': 'Brainstorm', 'date': '12/06/2024', 'time': '2:00 PM', 'attendees': ['Ben', 'Rachel', 'Dan'], 'location': None, 'duration': None, 'recurrence': None, 'notes': None}]"
+96,['Finance review 12 - Oct - 2023 6:30\u202fpm virtual']," ['Finance review 12 - Oct - 2023 6:30\u202fpm virtual']
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Finance review 12 - Oct - 2023 6:30\u202fpm virtual']
+AI: ['Finance review 12 - Oct - 2"," {'action': 'Finance review', 'date': '12/10/2023', 'time': '6:30 PM', 'attendees': None, 'location': 'virtual', 'duration': None, 'recurrence': None, 'notes': None}","[{'action': 'Finance review', 'date': '12/10/2023', 'time': '6:30 PM', 'attendees': None, 'location': 'virtual', 'duration': None, 'recurrence': None, 'notes': None}]"
+97,"['March 14, 2024 8am sync meeting Alex, Emma, Noah on Zoom']"," {'action': 'meeting', 'date': 'March 14, 2024', 'time': '8am', 'attendees': None, 'location': 'zoom', 'duration': '2 hours', 'recurrence': None, 'notes': None'}
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['March 14, 2024 "," {'action': 'sync meeting', 'date': '14/03/2024', 'time': '8:00 AM', 'attendees': ['Alex', 'Emma', 'Noah'], 'location': 'Zoom', 'duration': None, 'recurrence': None, 'notes': None}","[{'action': 'sync meeting', 'date': '14/03/2024', 'time': '8:00 AM', 'attendees': ['Alex', 'Emma', 'Noah'], 'location': 'Zoom', 'duration': None, 'recurrence': None, 'notes': None}]"
+98,"[""Plan a demo walkthrough on April 18, 2026 at 14:00, let's reserve 90 minutes for it.""]"," [""Plan a demo walkthrough on April 18, 2026 at 14:00, let's reserve 90 minutes for it.""]
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: [""Plan a demo walkthrough on April 18, 2026 at 14:00, let's reserve 90 minutes for it.""]
+"," {'action': 'Plan a demo walkthrough', 'date': '18/04/2026', 'time': '14:00', 'attendees': None, 'location': None, 'duration': '90 minutes', 'recurrence': None, 'notes': None}","[{'action': 'Plan a demo walkthrough', 'date': '18/04/2026', 'time': '14:00', 'attendees': None, 'location': None, 'duration': '90 minutes', 'recurrence': None, 'notes': None}]"
+99,"['Brainstorm w/ Mark 25th, Oct 2023 11:45 HQ 2hrs']"," ['Brainstorm w/ Mark 25th, Oct 2023 11:45 HQ 2hrs']
+--------------------------
+Please extract the entities for the below user input in JSON format. And do not output anything else.
+Human Input: ['Brainstorm w/ Mark 25th, Oct 2023 11:45 HQ 2hrs']
+AI: ['Brainstorm w/ Mark 25th"," {'action': 'Brainstorm', 'date': '25/10/2023', 'time': '11:45 AM', 'attendees': ['Mark'], 'location': 'HQ', 'duration': '2hrs', 'recurrence': None, 'notes': None}","[{'action': 'Brainstorm', 'date': '25/10/2023', 'time': '11:45 AM', 'attendees': ['Mark'], 'location': 'HQ', 'duration': '2hrs', 'recurrence': None, 'notes': None}]"
